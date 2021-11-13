@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6024b2dce38c2432094452bafad48b32, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  target: {fileID: -9114889020240603615, guid: 389da349ce4fb8e40934e47b2e36f63c, type: 3}
+  contents:
+  - blendshapesName: 8
+    TargetBlendshapesName: ExpressionBlendshapes.EyeBlink_L
+  - blendshapesName: 9
+    TargetBlendshapesName: ExpressionBlendshapes.EyeBlink_R
+  - blendshapesName: 10
+    TargetBlendshapesName: ExpressionBlendshapes.EyeDown_L
+  - blendshapesName: 11
+    TargetBlendshapesName: ExpressionBlendshapes.EyeDown_R
+  - blendshapesName: 12
+    TargetBlendshapesName: ExpressionBlendshapes.EyeIn_L
+  - blendshapesName: 13
+    TargetBlendshapesName: ExpressionBlendshapes.EyeIn_R
+  - blendshapesName: 14
+    TargetBlendshapesName: ExpressionBlendshapes.EyeOut_L
+  - blendshapesName: 15
+    TargetBlendshapesName: ExpressionBlendshapes.EyeOut_R
+  - blendshapesName: 16
+    TargetBlendshapesName: ExpressionBlendshapes.EyeUp_L
+  - blendshapesName: 17
+    TargetBlendshapesName: ExpressionBlendshapes.EyeUp_R
+  - blendshapesName: 1
+    TargetBlendshapesName: ExpressionBlendshapes.BrowsD_R
+  - blendshapesName: 0
+    TargetBlendshapesName: ExpressionBlendshapes.BrowsD_L
+  - blendshapesName: 3
+    TargetBlendshapesName: ExpressionBlendshapes.BrowsU_L
+  - blendshapesName: 4
+    TargetBlendshapesName: ExpressionBlendshapes.BrowsU_R
+  - blendshapesName: 2
+    TargetBlendshapesName: ExpressionBlendshapes.BrowsSqueeze
+  - blendshapesName: 24
+    TargetBlendshapesName: ExpressionBlendshapes.JawOpen
+  - blendshapesName: 23
+    TargetBlendshapesName: ExpressionBlendshapes.JawLeft
+  - blendshapesName: 25
+    TargetBlendshapesName: ExpressionBlendshapes.JawRight
+  - blendshapesName: 22
+    TargetBlendshapesName: ExpressionBlendshapes.JawFwd
+  - blendshapesName: 43
+    TargetBlendshapesName: ExpressionBlendshapes.MouthSmile_L
+  - blendshapesName: 44
+    TargetBlendshapesName: ExpressionBlendshapes.MouthSmile_R
+  - blendshapesName: 27
+    TargetBlendshapesName: ExpressionBlendshapes.MouthDimple_L
+  - blendshapesName: 28
+    TargetBlendshapesName: ExpressionBlendshapes.MouthDimple_R
+  - blendshapesName: 45
+    TargetBlendshapesName: ExpressionBlendshapes.LipsStretch_L
+  - blendshapesName: 46
+    TargetBlendshapesName: ExpressionBlendshapes.LipsStretch_R
+  - blendshapesName: 29
+    TargetBlendshapesName: ExpressionBlendshapes.MouthFrown_L
+  - blendshapesName: 30
+    TargetBlendshapesName: ExpressionBlendshapes.MouthFrown_R
+  - blendshapesName: 35
+    TargetBlendshapesName: ExpressionBlendshapes.MouthPress_L
+  - blendshapesName: 36
+    TargetBlendshapesName: ExpressionBlendshapes.MouthPress_R
+  - blendshapesName: 37
+    TargetBlendshapesName: ExpressionBlendshapes.LipsPucker
+  - blendshapesName: 31
+    TargetBlendshapesName: ExpressionBlendshapes.LipsFunnel
+  - blendshapesName: 32
+    TargetBlendshapesName: ExpressionBlendshapes.MouthLeft
+  - blendshapesName: 38
+    TargetBlendshapesName: ExpressionBlendshapes.MouthRight
+  - blendshapesName: 49
+    TargetBlendshapesName: ExpressionBlendshapes.Sneer_L
+  - blendshapesName: 50
+    TargetBlendshapesName: ExpressionBlendshapes.Sneer_R
+  - blendshapesName: 5
+    TargetBlendshapesName: ExpressionBlendshapes.Puff
+  - blendshapesName: 6
+    TargetBlendshapesName: ExpressionBlendshapes.CheekSquint_L
+  - blendshapesName: 7
+    TargetBlendshapesName: ExpressionBlendshapes.CheekSquint_R
