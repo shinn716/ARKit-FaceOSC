@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7971663553360187183}
   - component: {fileID: 7971663553360187152}
-  - component: {fileID: 7971663553360187182}
   m_Layer: 0
   m_Name: osc
   m_TagString: Untagged
@@ -47,16 +46,3 @@ MonoBehaviour:
   inPort: 0
   outIP: 127.0.0.1
   outPort: 1
---- !u!114 &7971663553360187182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7971663553360187153}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c32934229d5654ab8ab71ec5c1eec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  osc: {fileID: 7971663553360187152}

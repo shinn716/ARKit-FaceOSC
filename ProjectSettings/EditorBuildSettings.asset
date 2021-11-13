@@ -132,7 +132,7 @@ EditorBuildSettings:
     path: Assets/Test/ImageTracking.unity
     guid: 375d1ad43d9fdd74f90489e120955b37
   - enabled: 1
-    path: Assets/ArkitFaceOsc/FaceOSC.unity
+    path: Assets/ARKitFaceOsc/FaceOSC_app.unity
     guid: 6f9871cc182bd4d40bc6b8c6e8e0df79
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,

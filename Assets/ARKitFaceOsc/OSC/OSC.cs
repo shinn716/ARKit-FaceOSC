@@ -40,7 +40,7 @@ using UnityEngine;
 /// 
 /// \subsection OSCmessages OSC Messages
 /// OSC messages are represented by the class OscMessage, and consist of two elements:
-/// - An address string for the device on the board youíre dealing with.
+/// - An address string for the device on the board you?re dealing with.
 /// - A list of value(s) being sent to or from that device. The list of values is optional.
 /// 
 /// From the perspective of OSC addresses, the Make Controller Kit is organized into a hierarchy of two or three layers:
@@ -72,8 +72,8 @@ using UnityEngine;
 /// \section sendingdata Sending Data
 /// As previously mentioned, the Make Controller Kit can communicate over both 
 /// Ethernet and USB.  Messages are sent as packets, both over USB and UDP, and 
-/// corresponding structures are used ?UsbPacket and UdpPacket.  Once youíve created 
-/// a packet, you can simply call its Send() method, with the OscMessage youíd like to send.  
+/// corresponding structures are used ?UsbPacket and UdpPacket.  Once you?ve created 
+/// a packet, you can simply call its Send() method, with the OscMessage you?d like to send.  
 /// There are helper methods to create an OscMessage from a string, or you can pass in the OscMessage itself. 
 /// 
 /// For example, you might set up your UsbSend() routine to look something like:
@@ -87,7 +87,7 @@ using UnityEngine;
 /// 
 /// \section readingdata Reading Data
 /// The Make Controller Kit must be polled in order to read data from it.  To do this, 
-/// send an OscMessage with the address of the device youíd like to read, but omit 
+/// send an OscMessage with the address of the device you?d like to read, but omit 
 /// the list of values.  When the board receives an OscMessage with no value, 
 /// it interprets that as a read request, and sends back an OscMessage with the 
 /// current value at the appropriate address.

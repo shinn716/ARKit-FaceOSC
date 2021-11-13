@@ -62,6 +62,7 @@ public class OSCManager : MonoBehaviour
     [ContextMenu("CreateOSC")]
     public void CreateOSC()
     {
+        // OSC
         if (go_osc == null)
         {
             var tOSC = Resources.Load<GameObject>("osc").GetComponent<OSC>();
@@ -73,7 +74,7 @@ public class OSCManager : MonoBehaviour
                     tOSC.outPort = targetPort;
                     break;
                 case Type.Lintener:
-                    tOSC.inPort = listenerPort; 
+                    tOSC.inPort = listenerPort;
                     break;
                 case Type.Sender:
                     tOSC.outIP = targetIp;
