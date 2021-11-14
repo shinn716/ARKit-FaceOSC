@@ -12,7 +12,7 @@ public class FaceBlendShapeInfo : MonoBehaviour
     [SerializeField]
     Text blendShapeInfo;
 
-    public Dictionary<string, int> blendshapesList { get; set; } = new Dictionary<string, int>();
+    public Dictionary<ARKitBlendShapeLocation, float> m_FaceArkitBlendShapeIndexMap { get; set; } = null;
     public SkinnedMeshRenderer GetSkinnedMeshRenderer
     {
         get => skinnedMeshRenderer;
@@ -21,7 +21,7 @@ public class FaceBlendShapeInfo : MonoBehaviour
     public ARFace CurrentARFace { get; set; } = null;
 
     SkinnedMeshRenderer skinnedMeshRenderer = null;
-    Dictionary<ARKitBlendShapeLocation, float> m_FaceArkitBlendShapeIndexMap = null;
+    Dictionary<string, int> blendshapesList { get; set; } = new Dictionary<string, int>();
 
     // Start is called before the first frame update
     void Start()

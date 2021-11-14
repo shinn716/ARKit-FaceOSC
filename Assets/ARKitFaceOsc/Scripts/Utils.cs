@@ -19,23 +19,23 @@ namespace shinn.AR
             return arr;
         }
 
-        public static Dictionary<string, int> GetBlendShapeNamesReturnDict(SkinnedMeshRenderer obj, bool dict2Lower = false)
+        public static Dictionary<string, int> GetBlendShapeNamesReturnDict(SkinnedMeshRenderer obj)
         {
             Dictionary<string, int> blendshapesList = new Dictionary<string, int>();
             Mesh m = obj.sharedMesh;
             for (int i = 0; i < m.blendShapeCount; i++)
             {
                 var s = m.GetBlendShapeName(i);
-                var key = dict2Lower ? s.ToLower() : s;
-                blendshapesList.Add(key, i);
+                //var key = dict2Lower ? s.ToLower() : s;
+                blendshapesList.Add(s, i);
             }
             return blendshapesList;
         }
 
-        public static int GetBlendShapeByIndex(string name, Dictionary<string, int> blendshapesList, bool dict2Lower = false)
+        public static int GetBlendShapeByIndex(string name, Dictionary<string, int> blendshapesList)
         {
-            var key = dict2Lower ? name.ToLower() : name;
-            blendshapesList.TryGetValue(key, out int returnvalue);
+            //var key = dict2Lower ? name.ToLower() : name;
+            blendshapesList.TryGetValue(name, out int returnvalue);
             return returnvalue;
         }
     }

@@ -31,7 +31,7 @@ public class BlendshapesMapper : ScriptableObject
     public void Init()
     {
         foreach (var i in contents)
-            dict.Add("blendShape2." + i.blendshapesName.ToString(), i.TargetBlendshapesName);
+            dict.Add(i.blendshapesName.ToString(), i.TargetBlendshapesName);
     }
 
     [ContextMenu("ShowAllNameInConsole")]
@@ -59,7 +59,7 @@ public class BlendshapesMapper : ScriptableObject
 
         foreach(var i in tmp)
         {
-            contents.Add(new Content(BlendshapesDefine.List.browDown_L, i));
+            contents.Add(new Content(BlendshapesDefine.List.BrowDownLeft, i));
         }
     }
 }

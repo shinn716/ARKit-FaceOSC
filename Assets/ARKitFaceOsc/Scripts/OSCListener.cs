@@ -16,7 +16,7 @@ public class OSCListener : MonoBehaviour
     private IEnumerator Start()
     {
         blendshapesMapper.Init();
-        blendshapesList = shinn.AR.Utils.GetBlendShapeNamesReturnDict(targetSkinnedMeshRenderer, true);
+        blendshapesList = shinn.AR.Utils.GetBlendShapeNamesReturnDict(targetSkinnedMeshRenderer);
 
         yield return null;
         osc = OSCManager.instance.CurrentOsc;
@@ -34,12 +34,12 @@ public class OSCListener : MonoBehaviour
 
     private void OnReceive(OscMessage message)
     {
-        for (int i=0; i< blendshapesMapper.contents.Count; i++)
+        for (int i = 0; i < blendshapesMapper.contents.Count; i++)
         {
-            if(message.address == "/blendShape2." + blendshapesMapper.contents[i].blendshapesName.ToString())
+            if (message.address == "/" + blendshapesMapper.contents[i].blendshapesName.ToString())
             {
                 string[] sliceName = message.address.Split('/');
-                int index = shinn.AR.Utils.GetBlendShapeByIndex(blendshapesMapper.dict[sliceName[1]], blendshapesList, true);
+                int index = shinn.AR.Utils.GetBlendShapeByIndex(blendshapesMapper.dict[sliceName[1]], blendshapesList);
                 if (index != -1)
                 {
                     float value = message.GetInt(0);
