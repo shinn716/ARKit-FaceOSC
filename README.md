@@ -10,3 +10,6 @@
 6. Back to `FaceOSC app`.
 7. Press config / set ip and port.
 
+Ref.
+1. https://github.com/Unity-Technologies/arfoundation-samples
+2. https://thomasfredericks.github.io/UnityOSC/
