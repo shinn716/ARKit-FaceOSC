@@ -2,7 +2,7 @@
 <img src="https://github.com/shinn716/ARKit-FaceOSC/blob/main/images/demo.gif" /></a>  
 
 ## Setup
-1. Copy ARKitFaceOsc all files into `ARFoundration Sample` project (https://github.com/Unity-Technologies/arfoundation-samples).
+1. Copy ARKitFaceOsc all files into `ARFoundration Sample` project.
 2. Open scene `FaceOSC_app.unity`.
 3. Build app into iphone.
 4. Open scene `FaceOSC_listener.unity`
