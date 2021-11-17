@@ -42,19 +42,6 @@ public class FaceMsgSender : MonoBehaviour
         if (faceBlendShapeInfo.GetSkinnedMeshRenderer == null || !faceBlendShapeInfo.GetSkinnedMeshRenderer.enabled || faceBlendShapeInfo.GetSkinnedMeshRenderer.sharedMesh == null)
             return;
 
-        //OSC
-        //foreach (var i in faceBlendShapeInfo.blendshapesList)
-        //{
-        //    int sendvalue = (int)faceBlendShapeInfo.GetSkinnedMeshRenderer.GetBlendShapeWeight(i.Value);
-        //    if (sendvalue != 0)
-        //    {
-        //        OscMessage message = new OscMessage();
-        //        message.address = "/" + i.Key;
-        //        message.values.Add(sendvalue);
-        //        OSCManager.instance.CurrentOsc.Send(message);
-        //    }
-        //}
-
         // OSC
         foreach (var i in faceBlendShapeInfo.m_FaceArkitBlendShapeIndexMap)
         {
@@ -81,6 +68,13 @@ public class FaceMsgSender : MonoBehaviour
         OscMessage message = new OscMessage();
         message.address = "/test";
         message.values.Add(12345);
+        OSCManager.instance.CurrentOsc.Send(message);
+    }
+
+    public void AvatarReset()
+    {
+        OscMessage message = new OscMessage();
+        message.address = "/avatarreset";
         OSCManager.instance.CurrentOsc.Send(message);
     }
 }

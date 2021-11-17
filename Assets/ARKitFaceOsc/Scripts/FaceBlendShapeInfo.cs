@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARKit;
 using UnityEngine.XR.ARFoundation;
 
-
 public class FaceBlendShapeInfo : MonoBehaviour
 {
     [SerializeField]
@@ -38,7 +37,7 @@ public class FaceBlendShapeInfo : MonoBehaviour
             if (target != null)
             {
                 CurrentARFace = target;
-                skinnedMeshRenderer = target.gameObject.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>();
+                skinnedMeshRenderer = GameObject.FindObjectOfType<SkinnedMeshRenderer>();
                 blendshapesList = shinn.AR.Utils.GetBlendShapeNamesReturnDict(skinnedMeshRenderer);
             }
         }

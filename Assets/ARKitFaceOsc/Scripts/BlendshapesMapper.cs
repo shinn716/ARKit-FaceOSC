@@ -15,8 +15,6 @@ public class BlendshapesMapper : ScriptableObject
         }
 
         public BlendshapesDefine.List blendshapesName;
-        //public BlendshapesDefine.ARKitBlendShapeLocation aRKitBlendShapeLocation;
-
         public string TargetBlendshapesName = string.Empty;
     }
 

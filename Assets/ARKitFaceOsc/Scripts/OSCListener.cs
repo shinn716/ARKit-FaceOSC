@@ -30,6 +30,12 @@ public class OSCListener : MonoBehaviour
         osc.SetAllMessageHandler(OnReceive);
         osc.SetAddressHandler("/transform", OnReceiveTransform);
         osc.SetAddressHandler("/test", OnReceiveTest);
+        osc.SetAddressHandler("/avatarreset", OnReceiveAvatarReset);
+
+        qorg = head.localRotation;
+
+        qbase = qremote;
+        calib = true;
     }
 
     private void OnReceive(OscMessage message)
@@ -53,20 +59,52 @@ public class OSCListener : MonoBehaviour
     {
         Vector3 pos = new Vector3(message.GetFloat(0), message.GetFloat(1), message.GetFloat(2));
         Quaternion rot = new Quaternion(message.GetFloat(3), message.GetFloat(4), message.GetFloat(5), message.GetFloat(6));
-        head.rotation = rot;
+        //head.rotation = rot;
+
+        if (!calib)
+            return;
+
+        qremote = rot;
+        qpose = Quaternion.Inverse(qbase) * qremote;
+        head.localRotation = qpose * qorg;
     }
 
-    [ContextMenu("Test")]
-    public void Test()
+    public void OnReceiveAvatarReset(OscMessage message)
     {
-        OscMessage message = new OscMessage();
-        message.address = "/test";
-        message.values.Add(456);
-        osc.Send(message);
+        qbase = qremote;
+        calib = true;
     }
 
     private void OnReceiveTest(OscMessage message)
     {
         print(message);
     }
+
+
+    Quaternion qorg = Quaternion.identity;
+    Quaternion qpose = Quaternion.identity;
+    Quaternion qbase = Quaternion.identity;
+    Quaternion qremote = Quaternion.identity;
+    bool calib = false;
+    //bool calibflag = false;
+
+    //public Vector3 tt;
+
+
+    //private void Update()
+    //{
+    //    if (!calib)
+    //        return;
+
+    //    qremote = Quaternion.Euler(tt);
+    //    qpose = Quaternion.Inverse(qbase) * qremote;
+    //    head.localRotation = qpose * qorg;
+    //}
+
+    //[ContextMenu("Test")]
+    //public void Test()
+    //{
+    //    qbase = qremote;
+    //    calib = true;
+    //}
 }
