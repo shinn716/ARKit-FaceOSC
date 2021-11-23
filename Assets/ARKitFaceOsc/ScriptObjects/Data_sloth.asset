@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6024b2dce38c2432094452bafad48b32, type: 3}
+  m_Name: Data_sloth
+  m_EditorClassIdentifier: 
+  target: {fileID: 13700000, guid: 63ae12abc50414d5c882dbe18f6a820b, type: 3}
+  contents:
+  - blendshapesName: 8
+    TargetBlendshapesName: blendShape2.eyeBlink_L
+  - blendshapesName: 10
+    TargetBlendshapesName: blendShape2.eyeLookDown_L
+  - blendshapesName: 12
+    TargetBlendshapesName: blendShape2.eyeLookIn_L
+  - blendshapesName: 16
+    TargetBlendshapesName: blendShape2.eyeLookUp_L
+  - blendshapesName: 18
+    TargetBlendshapesName: blendShape2.eyeSquint_L
+  - blendshapesName: 20
+    TargetBlendshapesName: blendShape2.eyeWide_L
+  - blendshapesName: 9
+    TargetBlendshapesName: blendShape2.eyeBlink_R
+  - blendshapesName: 11
+    TargetBlendshapesName: blendShape2.eyeLookDown_R
+  - blendshapesName: 13
+    TargetBlendshapesName: blendShape2.eyeLookIn_R
+  - blendshapesName: 15
+    TargetBlendshapesName: blendShape2.eyeLookOut_R
+  - blendshapesName: 17
+    TargetBlendshapesName: blendShape2.eyeLookUp_R
+  - blendshapesName: 21
+    TargetBlendshapesName: blendShape2.eyeWide_R
+  - blendshapesName: 22
+    TargetBlendshapesName: blendShape2.jawForward
+  - blendshapesName: 23
+    TargetBlendshapesName: blendShape2.jawLeft
+  - blendshapesName: 24
+    TargetBlendshapesName: blendShape2.jawOpen
+  - blendshapesName: 25
+    TargetBlendshapesName: blendShape2.jawRight
+  - blendshapesName: 37
+    TargetBlendshapesName: blendShape2.mouthPucker
+  - blendshapesName: 31
+    TargetBlendshapesName: blendShape2.mouthFunnel
+  - blendshapesName: 26
+    TargetBlendshapesName: blendShape2.mouthClose
+  - blendshapesName: 44
+    TargetBlendshapesName: blendShape2.mouthSmile_R
+  - blendshapesName: 32
+    TargetBlendshapesName: blendShape2.mouthLeft
+  - blendshapesName: 38
+    TargetBlendshapesName: blendShape2.mouthRight
+  - blendshapesName: 43
+    TargetBlendshapesName: blendShape2.mouthSmile_L
+  - blendshapesName: 30
+    TargetBlendshapesName: blendShape2.mouthFrown_R
+  - blendshapesName: 29
+    TargetBlendshapesName: blendShape2.mouthFrown_L
+  - blendshapesName: 27
+    TargetBlendshapesName: blendShape2.mouthDimple_L
+  - blendshapesName: 28
+    TargetBlendshapesName: blendShape2.mouthDimple_R
+  - blendshapesName: 46
+    TargetBlendshapesName: blendShape2.mouthStretch_R
+  - blendshapesName: 45
+    TargetBlendshapesName: blendShape2.mouthStretch_L
+  - blendshapesName: 40
+    TargetBlendshapesName: blendShape2.mouthRollUpper
+  - blendshapesName: 39
+    TargetBlendshapesName: blendShape2.mouthRollLower
+  - blendshapesName: 42
+    TargetBlendshapesName: blendShape2.mouthShrugUpper
+  - blendshapesName: 41
+    TargetBlendshapesName: blendShape2.mouthShrugLower
+  - blendshapesName: 35
+    TargetBlendshapesName: blendShape2.mouthPress_L
+  - blendshapesName: 36
+    TargetBlendshapesName: blendShape2.mouthPress_R
+  - blendshapesName: 33
+    TargetBlendshapesName: blendShape2.mouthLowerDown_L
+  - blendshapesName: 34
+    TargetBlendshapesName: blendShape2.mouthLowerDown_R
+  - blendshapesName: 48
+    TargetBlendshapesName: blendShape2.mouthUpperUp_R
+  - blendshapesName: 47
+    TargetBlendshapesName: blendShape2.mouthUpperUp_L
+  - blendshapesName: 0
+    TargetBlendshapesName: blendShape2.browDown_L
+  - blendshapesName: 1
+    TargetBlendshapesName: blendShape2.browDown_R
+  - blendshapesName: 2
+    TargetBlendshapesName: blendShape2.browInnerUp
+  - blendshapesName: 4
+    TargetBlendshapesName: blendShape2.browOuterUp_R
+  - blendshapesName: 3
+    TargetBlendshapesName: blendShape2.browOuterUp_L
+  - blendshapesName: 5
+    TargetBlendshapesName: blendShape2.cheekPuff
+  - blendshapesName: 6
+    TargetBlendshapesName: blendShape2.cheekSquint_L
+  - blendshapesName: 7
+    TargetBlendshapesName: blendShape2.cheekSquint_R
+  - blendshapesName: 49
+    TargetBlendshapesName: blendShape2.noseSneer_L
+  - blendshapesName: 50
+    TargetBlendshapesName: blendShape2.noseSneer_R

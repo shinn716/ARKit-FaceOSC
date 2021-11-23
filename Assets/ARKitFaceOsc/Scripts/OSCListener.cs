@@ -66,7 +66,10 @@ public class OSCListener : MonoBehaviour
 
         qremote = rot;
         qpose = Quaternion.Inverse(qbase) * qremote;
-        head.localRotation = qpose * qorg;
+
+        Quaternion qtmp = qpose * qorg;
+        Quaternion qfin = new Quaternion(qtmp.x, -qtmp.y, qtmp.z, qtmp.w);
+        head.localRotation = qfin;
     }
 
     public void OnReceiveAvatarReset(OscMessage message)
@@ -86,25 +89,4 @@ public class OSCListener : MonoBehaviour
     Quaternion qbase = Quaternion.identity;
     Quaternion qremote = Quaternion.identity;
     bool calib = false;
-    //bool calibflag = false;
-
-    //public Vector3 tt;
-
-
-    //private void Update()
-    //{
-    //    if (!calib)
-    //        return;
-
-    //    qremote = Quaternion.Euler(tt);
-    //    qpose = Quaternion.Inverse(qbase) * qremote;
-    //    head.localRotation = qpose * qorg;
-    //}
-
-    //[ContextMenu("Test")]
-    //public void Test()
-    //{
-    //    qbase = qremote;
-    //    calib = true;
-    //}
 }
