@@ -40,6 +40,8 @@ public class FacemeshSwitcher : MonoBehaviour
 
     void OnDropdown(Dropdown dropdown)
     {
+        if (faceBlendShapeInfo.GetSkinnedMeshRenderer == null)
+            return;
         switch (dropdown.value)
         {
             default:

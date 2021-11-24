@@ -18,7 +18,7 @@ public class ConfigMenu : MonoBehaviour
         catch (System.Exception)
         {
             OSCManager.instance.TargetIp = "127.0.0.1";
-            OSCManager.instance.TargetPort = "10001";
+            OSCManager.instance.TargetPort = "12000";
         }
 
         yield return new WaitForEndOfFrame();

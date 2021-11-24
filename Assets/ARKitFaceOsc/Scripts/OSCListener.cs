@@ -68,7 +68,7 @@ public class OSCListener : MonoBehaviour
         qpose = Quaternion.Inverse(qbase) * qremote;
 
         Quaternion qtmp = qpose * qorg;
-        Quaternion qfin = new Quaternion(qtmp.x, -qtmp.y, qtmp.z, qtmp.w);
+        Quaternion qfin = new Quaternion(qtmp.x, qtmp.y, qtmp.z, qtmp.w);
         head.localRotation = qfin;
     }
 
