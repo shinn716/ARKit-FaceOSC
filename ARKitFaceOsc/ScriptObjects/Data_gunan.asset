@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6024b2dce38c2432094452bafad48b32, type: 3}
-  m_Name: Data
+  m_Name: Data_gunan
   m_EditorClassIdentifier: 
   target: {fileID: -9114889020240603615, guid: 389da349ce4fb8e40934e47b2e36f63c, type: 3}
   contents:
