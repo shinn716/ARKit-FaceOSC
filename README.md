@@ -10,6 +10,9 @@
 6. Back to `FaceOSC app`.
 7. Press config / set ip and port.
 
+## Binding blendshapes (ARKit and model)    
+<img src="https://github.com/shinn716/ARKit-FaceOSC/blob/main/images/demo2.gif" /></a>  
+
 ## Ref.
 1. ARFoundation Samples - https://github.com/Unity-Technologies/arfoundation-samples
 2. Unity OSC - https://thomasfredericks.github.io/UnityOSC/
