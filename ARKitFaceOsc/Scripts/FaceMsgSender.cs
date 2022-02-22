@@ -12,6 +12,12 @@ public class FaceMsgSender : MonoBehaviour
 
     bool flag = false;
 
+    private void Start()
+    {
+        print("[SystemInfo.deviceModel] " + SystemInfo.deviceModel);
+        InvokeRepeating("WDT", 1, 5);
+    }
+
     private void OnDisable() 
     {
         if (faceBlendShapeInfo.CurrentARFace != null)
@@ -62,6 +68,16 @@ public class FaceMsgSender : MonoBehaviour
         message_transform.values.Add(faceBlendShapeInfo.CurrentARFace.gameObject.transform.rotation.w);
         OSCManager.instance.CurrentOsc.Send(message_transform);
     }
+
+    void WDT()
+    {
+        OscMessage message = new OscMessage();
+        message.address = "/wdt";
+        message.values.Add(SystemInfo.deviceModel);
+        OSCManager.instance.CurrentOsc.Send(message);
+    }
+
+
 
     public void Test()
     {

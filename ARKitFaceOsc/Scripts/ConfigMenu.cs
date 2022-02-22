@@ -26,9 +26,18 @@ public class ConfigMenu : MonoBehaviour
         port.text = OSCManager.instance.TargetPort.ToString();
     }
 
-    private void OnDestroy()
+    public void SavePlayerPrefs()
     {
         PlayerPrefs.SetString("TargetIp", ip.text);
         PlayerPrefs.SetString("TargetPort", port.text);
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            PlayerPrefs.SetString("TargetIp", ip.text);
+            PlayerPrefs.SetString("TargetPort", port.text);
+        }
     }
 }
